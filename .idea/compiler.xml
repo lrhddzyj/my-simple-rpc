@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="test-api" />
+        <module name="rpc-netty" />
+        <module name="test-consumer" />
+        <module name="dynamic-demo" />
+        <module name="rpc-api" />
+        <module name="test-provider" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dynamic-demo" options="-XDignore.symbol.file" />
+      <module name="rpc-api" options="-XDignore.symbol.file" />
+      <module name="rpc-netty" options="-XDignore.symbol.file" />
+      <module name="test-api" options="-XDignore.symbol.file" />
+      <module name="test-consumer" options="-XDignore.symbol.file" />
+      <module name="test-provider" options="-XDignore.symbol.file" />
+    </option>
+  </component>
+</project>
